@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 def main():
     fig=plt.figure(figsize=(6.7,5))
     fx=fig.add_subplot(111)
-    gx=fig.add_subplot(121)
     ax = plt.gca()
     ax.set_xlim(0,500000)
     with open('files/rsel.csv','r') as f1:
@@ -62,8 +61,6 @@ def main():
         plt.plot(list1,list2,label="2-Coev",color="magenta")
     fx.set_xlabel('Rozegranych gier')
     fx.set_ylabel('Odsetek wygranych gier')
-    gx.set_xlabel('Rozegranych gier')
-    gx.set_ylabel('Odsetek wygranych gier')
     plt.legend(loc="lower right")
     plt.savefig('myplot.pdf')
     plt.close()
