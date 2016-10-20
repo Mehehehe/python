@@ -108,8 +108,8 @@ def map_gradient(v,s):
     if s != 0: t=0.005
     if v <= 5/20: return hsv2rgb(120,0.8-t,0.5+s/20) #ciemnycielony 120
     if v <= 15/20: return hsv2rgb(120, 0.8-t, 0.5+(v-0.25)+s/20) #zielony 120
-    if v <= 99/100: return hsv2rgb(120-((v-0.75)/24*6000), 0.8-t, 1+s/20) #¿ó³ty 60
-    #if v <= 4/5: return hsv2rgb(60-150*(v-0.6), 0.8, 1) #pomarañczowy 30
+    if v <= 99/100: return hsv2rgb(120-((v-0.75)/24*6000), 0.8-t, 1+s/20) #Â¿Ã³Â³ty 60
+    #if v <= 4/5: return hsv2rgb(60-150*(v-0.6), 0.8, 1) #pomaraÃ±czowy 30
     return hsv2rgb(60-200*(v-(99/100)), 0.8-t, 1+s/20) # pom 30
 
 ##########################################################
@@ -142,7 +142,8 @@ for i in range (498):
         shade[j].append(0)
 
 
-
+#file downloaded from
+#http://www.cs.put.poznan.pl/wjaskowski/pub/teaching/kck/kolorowanie_mapy/big.dem
 
 with open('big.dem','r') as file:
     x=file.readline().split(' ')
