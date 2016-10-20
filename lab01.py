@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+#main
 def main():
     fig=plt.figure(figsize=(6.7,5))
     ax = plt.gca()
@@ -61,7 +62,5 @@ def main():
     plt.legend(loc="lower right")
     plt.savefig('myplot.pdf')
     plt.close()
-
-
 if __name__ == '__main__':
     main()
